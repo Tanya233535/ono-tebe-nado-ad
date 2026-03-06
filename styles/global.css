@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
 }
