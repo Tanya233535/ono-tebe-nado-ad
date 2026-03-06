@@ -62,7 +62,7 @@
   padding: 0 3px 4px 0;
 }
 
-.header__links-list {
+.header_menu {
   display: flex;
   gap: 30px;
   list-style: circle;
@@ -78,7 +78,8 @@
   text-underline-offset: 4px;
 }
 
-.header__link_active {
+.main_link_marker {
+  list-style-type: none; 
   text-decoration: none;
   padding-left: 0;
 }
@@ -107,7 +108,9 @@
   color: #fff;
   background-image: url("../images/cover.jpg");
   background-size: cover;
-  background-position: center;
+  color: white;
+  text-transform: uppercase;
+  z-index: 0;
   background-repeat: no-repeat;
   margin-bottom: 180px;
 }
@@ -178,31 +181,40 @@
   text-decoration: none;
 }
 
+.card_lots {
+  max-width: 334px;
+  min-height: 563px;
+  flex-grow: 1;
+}
+
 .card {
   z-index: 2;
   font-size: 20px;
   height: 100%;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+  padding: 51px 40px 48px;
   justify-content: space-between;
   max-width: 334px;
   min-height: 596px;
   max-height: 596px;
 }
 
-.card_type_film {
-  background-image: url("../images/card-lot-01.jpg");
+.card_about_cinema {
+  background-image: url(./../images/card-lot-01.jpg);
 }
 
-.card_type_book {
-  background-image: url("../images/card-lot-02.jpg");
+.card_about_book {
+  background-image: url(./../images/card-lot-02.jpg);
 }
 
-.card_type_picture {
-  background-image: url("../images/card-lot-03.jpg");
+.card_about_picture {
+  background-image: url(./../images/card-lot-03.jpg);
 }
 
-.card__title {
+.card_title {
+  color: white;
   font-size: 22px;
   font-weight: bold;
   text-decoration: underline solid #fff 1px;
@@ -225,14 +237,20 @@
 /* about */
 
 .about {
+  margin-top: 148px;
+}
+
+.about_container {
   display: grid;
   grid-template-columns: 383px 1fr;
   margin-bottom: 156px;
   margin-right: 24px;
 }
 
-.about__logo {
-  display: flex;
+.about_logo {
+  justify-self: center;
+  background-color: #000;
+  border-radius: 50%;
   width: 240px;
   height: 240px;
   border-radius: 50%;
@@ -253,7 +271,10 @@
   text-transform: uppercase;
 }
 
-.about__text {
+.about_text {
+  align-self: flex-start;
+  font-family: "Raleway", sans-serif;
+  color: black;
   font-size: 20px;
   line-height: 1.2;
   padding-bottom: 24px;
@@ -288,7 +309,7 @@
   text-underline-offset: 4px;
 }
 
-.footer__menu-link_active {
+.footer_main {
   text-decoration: none;
 }
 
@@ -305,4 +326,9 @@
 
 .footer__social-icon {
     width: 48px;
+}
+
+.footer_images {
+  display: flex;
+  gap: 48px;
 }
